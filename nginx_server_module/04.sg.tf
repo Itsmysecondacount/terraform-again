@@ -1,7 +1,7 @@
 #### FIREWALL
 
 resource "aws_security_group" "nginx-server-sg" {
-	name = "nginx-server-sg"
+	name = "nginx-server-sg-${var.environment}"
 	description = "Security group allow ssh and http access"
 
 	ingress {

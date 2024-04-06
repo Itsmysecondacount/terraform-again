@@ -6,10 +6,10 @@
                 {
                     "AmiLaunchIndex": 0,
                     "ImageId": "ami-0440d3b780d96b29d",
-                    "InstanceId": "i-0d2c281632289d48c",
+                    "InstanceId": "i-00d848b25ca816606",
                     "InstanceType": "t3.micro",
                     "KeyName": "nginx-server-ssh",
-                    "LaunchTime": "2024-04-05T20:53:29+00:00",
+                    "LaunchTime": "2024-04-05T21:27:27+00:00",
                     "Monitoring": {
                         "State": "disabled"
                     },
@@ -25,10 +25,10 @@
                         "Code": 48,
                         "Name": "terminated"
                     },
-                    "StateTransitionReason": "User initiated (2024-04-05 21:05:16 GMT)",
+                    "StateTransitionReason": "User initiated (2024-04-05 23:43:05 GMT)",
                     "Architecture": "x86_64",
                     "BlockDeviceMappings": [],
-                    "ClientToken": "terraform-20240405205328294000000001",
+                    "ClientToken": "terraform-20240405212726667200000001",
                     "EbsOptimized": false,
                     "EnaSupport": true,
                     "Hypervisor": "xen",
@@ -40,143 +40,6 @@
                         "Code": "Client.UserInitiatedShutdown",
                         "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
                     },
-                    "VirtualizationType": "hvm",
-                    "CpuOptions": {
-                        "CoreCount": 1,
-                        "ThreadsPerCore": 2
-                    },
-                    "CapacityReservationSpecification": {
-                        "CapacityReservationPreference": "open"
-                    },
-                    "HibernationOptions": {
-                        "Configured": false
-                    },
-                    "MetadataOptions": {
-                        "State": "pending",
-                        "HttpTokens": "required",
-                        "HttpPutResponseHopLimit": 2,
-                        "HttpEndpoint": "enabled",
-                        "HttpProtocolIpv6": "disabled",
-                        "InstanceMetadataTags": "disabled"
-                    },
-                    "EnclaveOptions": {
-                        "Enabled": false
-                    },
-                    "BootMode": "uefi-preferred",
-                    "PlatformDetails": "Linux/UNIX",
-                    "UsageOperation": "RunInstances",
-                    "UsageOperationUpdateTime": "2024-04-05T20:53:29+00:00",
-                    "MaintenanceOptions": {
-                        "AutoRecovery": "default"
-                    },
-                    "CurrentInstanceBootMode": "uefi"
-                }
-            ],
-            "OwnerId": "851725177536",
-            "ReservationId": "r-04020639eb755116f"
-        },
-        {
-            "Groups": [],
-            "Instances": [
-                {
-                    "AmiLaunchIndex": 0,
-                    "ImageId": "ami-0440d3b780d96b29d",
-                    "InstanceId": "i-00d848b25ca816606",
-                    "InstanceType": "t3.micro",
-                    "KeyName": "nginx-server-ssh",
-                    "LaunchTime": "2024-04-05T21:27:27+00:00",
-                    "Monitoring": {
-                        "State": "disabled"
-                    },
-                    "Placement": {
-                        "AvailabilityZone": "us-east-1c",
-                        "GroupName": "",
-                        "Tenancy": "default"
-                    },
-                    "PrivateDnsName": "ip-172-31-44-38.ec2.internal",
-                    "PrivateIpAddress": "172.31.44.38",
-                    "ProductCodes": [],
-                    "PublicDnsName": "ec2-52-91-47-169.compute-1.amazonaws.com",
-                    "PublicIpAddress": "52.91.47.169",
-                    "State": {
-                        "Code": 16,
-                        "Name": "running"
-                    },
-                    "StateTransitionReason": "",
-                    "SubnetId": "subnet-03c7fddfd7c30e918",
-                    "VpcId": "vpc-06010a5164180cdab",
-                    "Architecture": "x86_64",
-                    "BlockDeviceMappings": [
-                        {
-                            "DeviceName": "/dev/xvda",
-                            "Ebs": {
-                                "AttachTime": "2024-04-05T21:27:28+00:00",
-                                "DeleteOnTermination": true,
-                                "Status": "attached",
-                                "VolumeId": "vol-0b0c2fb486b6b3fba"
-                            }
-                        }
-                    ],
-                    "ClientToken": "terraform-20240405212726667200000001",
-                    "EbsOptimized": false,
-                    "EnaSupport": true,
-                    "Hypervisor": "xen",
-                    "NetworkInterfaces": [
-                        {
-                            "Association": {
-                                "IpOwnerId": "amazon",
-                                "PublicDnsName": "ec2-52-91-47-169.compute-1.amazonaws.com",
-                                "PublicIp": "52.91.47.169"
-                            },
-                            "Attachment": {
-                                "AttachTime": "2024-04-05T21:27:27+00:00",
-                                "AttachmentId": "eni-attach-09cd817eba3d08f52",
-                                "DeleteOnTermination": true,
-                                "DeviceIndex": 0,
-                                "Status": "attached",
-                                "NetworkCardIndex": 0
-                            },
-                            "Description": "",
-                            "Groups": [
-                                {
-                                    "GroupName": "nginx-server-sg",
-                                    "GroupId": "sg-0273afa5b30bd03c1"
-                                }
-                            ],
-                            "Ipv6Addresses": [],
-                            "MacAddress": "0e:4d:88:9f:53:a5",
-                            "NetworkInterfaceId": "eni-0cb6c842cb6bc28c1",
-                            "OwnerId": "851725177536",
-                            "PrivateDnsName": "ip-172-31-44-38.ec2.internal",
-                            "PrivateIpAddress": "172.31.44.38",
-                            "PrivateIpAddresses": [
-                                {
-                                    "Association": {
-                                        "IpOwnerId": "amazon",
-                                        "PublicDnsName": "ec2-52-91-47-169.compute-1.amazonaws.com",
-                                        "PublicIp": "52.91.47.169"
-                                    },
-                                    "Primary": true,
-                                    "PrivateDnsName": "ip-172-31-44-38.ec2.internal",
-                                    "PrivateIpAddress": "172.31.44.38"
-                                }
-                            ],
-                            "SourceDestCheck": true,
-                            "Status": "in-use",
-                            "SubnetId": "subnet-03c7fddfd7c30e918",
-                            "VpcId": "vpc-06010a5164180cdab",
-                            "InterfaceType": "interface"
-                        }
-                    ],
-                    "RootDeviceName": "/dev/xvda",
-                    "RootDeviceType": "ebs",
-                    "SecurityGroups": [
-                        {
-                            "GroupName": "nginx-server-sg",
-                            "GroupId": "sg-0273afa5b30bd03c1"
-                        }
-                    ],
-                    "SourceDestCheck": true,
                     "Tags": [
                         {
                             "Key": "Project",
@@ -211,7 +74,7 @@
                         "Configured": false
                     },
                     "MetadataOptions": {
-                        "State": "applied",
+                        "State": "pending",
                         "HttpTokens": "required",
                         "HttpPutResponseHopLimit": 2,
                         "HttpEndpoint": "enabled",
@@ -225,11 +88,6 @@
                     "PlatformDetails": "Linux/UNIX",
                     "UsageOperation": "RunInstances",
                     "UsageOperationUpdateTime": "2024-04-05T21:27:27+00:00",
-                    "PrivateDnsNameOptions": {
-                        "HostnameType": "ip-name",
-                        "EnableResourceNameDnsARecord": false,
-                        "EnableResourceNameDnsAAAARecord": false
-                    },
                     "MaintenanceOptions": {
                         "AutoRecovery": "default"
                     },
@@ -238,230 +96,6 @@
             ],
             "OwnerId": "851725177536",
             "ReservationId": "r-0d12df356215093a7"
-        },
-        {
-            "Groups": [],
-            "Instances": [
-                {
-                    "AmiLaunchIndex": 0,
-                    "ImageId": "ami-0440d3b780d96b29d",
-                    "InstanceId": "i-024fe264ba2fd186d",
-                    "InstanceType": "t3.micro",
-                    "KeyName": "nginx-server-ssh",
-                    "LaunchTime": "2024-04-05T21:19:20+00:00",
-                    "Monitoring": {
-                        "State": "disabled"
-                    },
-                    "Placement": {
-                        "AvailabilityZone": "us-east-1c",
-                        "GroupName": "",
-                        "Tenancy": "default"
-                    },
-                    "PrivateDnsName": "",
-                    "ProductCodes": [],
-                    "PublicDnsName": "",
-                    "State": {
-                        "Code": 48,
-                        "Name": "terminated"
-                    },
-                    "StateTransitionReason": "User initiated (2024-04-05 21:25:54 GMT)",
-                    "Architecture": "x86_64",
-                    "BlockDeviceMappings": [],
-                    "ClientToken": "terraform-20240405211919443300000001",
-                    "EbsOptimized": false,
-                    "EnaSupport": true,
-                    "Hypervisor": "xen",
-                    "NetworkInterfaces": [],
-                    "RootDeviceName": "/dev/xvda",
-                    "RootDeviceType": "ebs",
-                    "SecurityGroups": [],
-                    "StateReason": {
-                        "Code": "Client.UserInitiatedShutdown",
-                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
-                    },
-                    "VirtualizationType": "hvm",
-                    "CpuOptions": {
-                        "CoreCount": 1,
-                        "ThreadsPerCore": 2
-                    },
-                    "CapacityReservationSpecification": {
-                        "CapacityReservationPreference": "open"
-                    },
-                    "HibernationOptions": {
-                        "Configured": false
-                    },
-                    "MetadataOptions": {
-                        "State": "pending",
-                        "HttpTokens": "required",
-                        "HttpPutResponseHopLimit": 2,
-                        "HttpEndpoint": "enabled",
-                        "HttpProtocolIpv6": "disabled",
-                        "InstanceMetadataTags": "disabled"
-                    },
-                    "EnclaveOptions": {
-                        "Enabled": false
-                    },
-                    "BootMode": "uefi-preferred",
-                    "PlatformDetails": "Linux/UNIX",
-                    "UsageOperation": "RunInstances",
-                    "UsageOperationUpdateTime": "2024-04-05T21:19:20+00:00",
-                    "MaintenanceOptions": {
-                        "AutoRecovery": "default"
-                    },
-                    "CurrentInstanceBootMode": "uefi"
-                }
-            ],
-            "OwnerId": "851725177536",
-            "ReservationId": "r-0b7be152e4f04c26a"
-        },
-        {
-            "Groups": [],
-            "Instances": [
-                {
-                    "AmiLaunchIndex": 0,
-                    "ImageId": "ami-0440d3b780d96b29d",
-                    "InstanceId": "i-006cbbeff874bfa1c",
-                    "InstanceType": "t3.micro",
-                    "KeyName": "nginx-server-ssh",
-                    "LaunchTime": "2024-04-05T21:08:28+00:00",
-                    "Monitoring": {
-                        "State": "disabled"
-                    },
-                    "Placement": {
-                        "AvailabilityZone": "us-east-1c",
-                        "GroupName": "",
-                        "Tenancy": "default"
-                    },
-                    "PrivateDnsName": "",
-                    "ProductCodes": [],
-                    "PublicDnsName": "",
-                    "State": {
-                        "Code": 48,
-                        "Name": "terminated"
-                    },
-                    "StateTransitionReason": "User initiated (2024-04-05 21:17:26 GMT)",
-                    "Architecture": "x86_64",
-                    "BlockDeviceMappings": [],
-                    "ClientToken": "terraform-20240405210827532000000001",
-                    "EbsOptimized": false,
-                    "EnaSupport": true,
-                    "Hypervisor": "xen",
-                    "NetworkInterfaces": [],
-                    "RootDeviceName": "/dev/xvda",
-                    "RootDeviceType": "ebs",
-                    "SecurityGroups": [],
-                    "StateReason": {
-                        "Code": "Client.UserInitiatedShutdown",
-                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
-                    },
-                    "VirtualizationType": "hvm",
-                    "CpuOptions": {
-                        "CoreCount": 1,
-                        "ThreadsPerCore": 2
-                    },
-                    "CapacityReservationSpecification": {
-                        "CapacityReservationPreference": "open"
-                    },
-                    "HibernationOptions": {
-                        "Configured": false
-                    },
-                    "MetadataOptions": {
-                        "State": "pending",
-                        "HttpTokens": "required",
-                        "HttpPutResponseHopLimit": 2,
-                        "HttpEndpoint": "enabled",
-                        "HttpProtocolIpv6": "disabled",
-                        "InstanceMetadataTags": "disabled"
-                    },
-                    "EnclaveOptions": {
-                        "Enabled": false
-                    },
-                    "BootMode": "uefi-preferred",
-                    "PlatformDetails": "Linux/UNIX",
-                    "UsageOperation": "RunInstances",
-                    "UsageOperationUpdateTime": "2024-04-05T21:08:28+00:00",
-                    "MaintenanceOptions": {
-                        "AutoRecovery": "default"
-                    },
-                    "CurrentInstanceBootMode": "uefi"
-                }
-            ],
-            "OwnerId": "851725177536",
-            "ReservationId": "r-0910da1ab6f7dd6b7"
-        },
-        {
-            "Groups": [],
-            "Instances": [
-                {
-                    "AmiLaunchIndex": 0,
-                    "ImageId": "ami-0440d3b780d96b29d",
-                    "InstanceId": "i-04b137006a5e0e882",
-                    "InstanceType": "t3.micro",
-                    "LaunchTime": "2024-04-05T20:21:55+00:00",
-                    "Monitoring": {
-                        "State": "disabled"
-                    },
-                    "Placement": {
-                        "AvailabilityZone": "us-east-1c",
-                        "GroupName": "",
-                        "Tenancy": "default"
-                    },
-                    "PrivateDnsName": "",
-                    "ProductCodes": [],
-                    "PublicDnsName": "",
-                    "State": {
-                        "Code": 48,
-                        "Name": "terminated"
-                    },
-                    "StateTransitionReason": "User initiated (2024-04-05 20:38:24 GMT)",
-                    "Architecture": "x86_64",
-                    "BlockDeviceMappings": [],
-                    "ClientToken": "terraform-20240405202154037000000001",
-                    "EbsOptimized": false,
-                    "EnaSupport": true,
-                    "Hypervisor": "xen",
-                    "NetworkInterfaces": [],
-                    "RootDeviceName": "/dev/xvda",
-                    "RootDeviceType": "ebs",
-                    "SecurityGroups": [],
-                    "StateReason": {
-                        "Code": "Client.UserInitiatedShutdown",
-                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
-                    },
-                    "VirtualizationType": "hvm",
-                    "CpuOptions": {
-                        "CoreCount": 1,
-                        "ThreadsPerCore": 2
-                    },
-                    "CapacityReservationSpecification": {
-                        "CapacityReservationPreference": "open"
-                    },
-                    "HibernationOptions": {
-                        "Configured": false
-                    },
-                    "MetadataOptions": {
-                        "State": "pending",
-                        "HttpTokens": "required",
-                        "HttpPutResponseHopLimit": 2,
-                        "HttpEndpoint": "enabled",
-                        "HttpProtocolIpv6": "disabled",
-                        "InstanceMetadataTags": "disabled"
-                    },
-                    "EnclaveOptions": {
-                        "Enabled": false
-                    },
-                    "BootMode": "uefi-preferred",
-                    "PlatformDetails": "Linux/UNIX",
-                    "UsageOperation": "RunInstances",
-                    "UsageOperationUpdateTime": "2024-04-05T20:21:55+00:00",
-                    "MaintenanceOptions": {
-                        "AutoRecovery": "default"
-                    },
-                    "CurrentInstanceBootMode": "uefi"
-                }
-            ],
-            "OwnerId": "851725177536",
-            "ReservationId": "r-0f16edfb8d49096f5"
         }
     ]
 }
